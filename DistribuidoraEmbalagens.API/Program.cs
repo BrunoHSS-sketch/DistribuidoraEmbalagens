@@ -16,6 +16,8 @@ builder.Services.AddAutoMapper(typeof(ProdutoProfile).Assembly);
 
 // Injeta a implementação do serviço de produto
 builder.Services.AddScoped<IProdutoService, ProdutoService>();
+// Injeta a implementação do serviço de venda
+builder.Services.AddScoped<IVendaService, VendaService>();
 
 // AddControllers + Swagger
 builder.Services.AddControllers();
